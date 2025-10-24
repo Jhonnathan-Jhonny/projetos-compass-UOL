@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #dfdfdf;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.ctn-header {
+  width: 100%;
+  height: 65px;
+  background-color: #050505;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.ctn-logo {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.ctn-logo p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.ctn-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+}
+
+.ctn-info p {
+  color: #050505;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-container {
+  flex: 1 1 300px;
+  max-width: 400px;
+  min-height: 290px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-container h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-container p {
+  font-size: 1em;
+  color: #808080;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.ctn-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ctn-btn-hr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 40px;
+  border-radius: 12px;
+  background-color: #050505;
+  cursor: pointer;
+}
+
+.button p {
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+}
+
+.button {
+  text-decoration: none;
+}
+
+
+.spn-footer {
+  font-size: 0.85em;
+  color: #808080;
+  margin-top: 15px;
+  align-self: flex-end;
+}

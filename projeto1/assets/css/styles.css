@@ -1,0 +1,252 @@
+:root {
+    --primary-color: #fc7e01c4;      
+    --secondary-color: #f9c30094;   
+    --accent-color: #FD0024;      
+    --text-color: #333;
+    --light-text: #6c757d;
+    --border-color: #dee2e6;
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --white: #ffffff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    background-color: #f5f5f5;
+    color: var(--text-color);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+#formSection {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+}
+
+#logoContainer {
+    flex: 1;
+    max-width: 1000px;
+}
+
+#logoContainer img {
+    height: auto;
+    max-width: 100%;
+}
+
+#formContainer {
+    background-color: var(--white);
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    border-radius: 8px;
+    flex: 1;
+    max-width: 500px;
+}
+
+#formContainer h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+    background-color: #e2e6ea;
+}
+
+#tableSection {
+    width: 100%;
+    padding: 0 2rem 2rem;
+}
+
+#tableContainer {
+    background-color: var(--white);
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+#tableContainer h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    box-shadow: var(--shadow);
+    border-radius: 8px;
+}
+
+#userTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+#userTable thead {
+    background-color: var(--white);
+    color: var(--text-color);
+}
+
+#userTable th, #userTable td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+#userTable th {
+    font-weight: 600;
+}
+
+#userTable tbody tr:hover {
+    background-color: rgba(0, 102, 204, 0.05);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.5rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer a {
+    color: var(--white);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        padding: 1rem;
+        flex-direction: column;
+    }
+    
+    #formSection {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    #logoContainer {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    
+    #formContainer {
+        width: 100%;
+        padding: 1.5rem;
+    }
+    
+    #buttonContainer {
+        flex-direction: column;
+    }
+    
+    .btn-primary, .btn-secondary {
+        width: 100%;
+    }
+    
+    #tableSection {
+        padding: 0 1rem 1rem;
+    }
+    
+    #tableContainer {
+        padding: 1rem;
+    }
+}

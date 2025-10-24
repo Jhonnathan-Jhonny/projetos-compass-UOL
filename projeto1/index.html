@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Desafio da Sprint 1</title>
+</head>
+<body>
+    <main class="content-wrapper">
+        <section id="formSection">
+            <div id="logoContainer">
+                <img src="./assets/images/logoCompass.png" alt="Logo Compass UOL">
+            </div>
+            <div id="formContainer">            
+                <h1>Gerenciamento de usuários</h1>
+                <form id="formUser">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" placeholder="Digite o nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dateBirth">Data de Nascimento:</label>
+                        <input type="date" id="dateBirth" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Telefone:</label>
+                        <input type="tel" maxlength="14 required" id="telephone" placeholder="(DD) 00000-0000" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="exemplo@email.com" required>
+                    </div>
+                </form>
+                <div id="buttonContainer">
+                    <button type="button" id="salvar" class="btn-primary">Salvar</button>
+                    <button type="button" id="cancelar" class="btn-secondary">Cancelar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="tableSection">
+        <div id="tableContainer">
+            <h2>Lista de Usuários</h2>
+            <div class="table-responsive">
+                <table id="userTable">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Data de Nascimento</th>
+                            <th>Telefone</th>
+                            <th>Email</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>Desenvolvido por <a href="https://github.com/Jhonnathan-Jhonny" target="_blank">Jhonnathan Jhonny Rufino Rodrigues</a> - Compasso UOL</p>
+            <p>Todos os direitos reservados &copy; <span id="current-year">2023</span></p>
+        </div>
+    </footer>
+    <script type="module" src="./assets/js/arquivo.js"></script>
+</body>
+</html>

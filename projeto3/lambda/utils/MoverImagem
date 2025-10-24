@@ -1,0 +1,18 @@
+def mover_imagem_por_pagamento(bucket, caminho_imagem, forma_pagamento):
+    if forma_pagamento.lower() in ["dinheiro", "pix"]:
+        nova_pasta = "invoices/dinheiro"
+    else:
+        nova_pasta = "invoices/outros"
+    
+    nome_arquivo = os.path.basename(caminho_imagem)
+    novo_caminho = f"{nova_pasta}/{nome_arquivo}"
+    
+    s3.copy_object(
+        Bucket=bucket,
+        CopySource={"Bucket": bucket, "Key": caminho_imagem},
+        Key=novo_caminho
+    )
+    
+    s3.delete_object(Bucket=bucket, Key=caminho_imagem)
+    
+    return novo_caminho
